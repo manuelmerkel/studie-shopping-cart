@@ -1,5 +1,5 @@
 # Shopping Cart  
-A simple E-commerce website using Flask. Test PR
+A simple E-commerce website using Flask. Test
 
 ## Dependencies
 
