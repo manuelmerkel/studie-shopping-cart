@@ -18,7 +18,7 @@ class TestOrderTable(unittest.TestCase):
             [3, 12, "B: Test Product"],
             [4, 1, "A: Test Product"],
             [5, 1, "A: Test Product"],
-            [6, 12, "Z: Test Product"]
+            [6, 12, "Z: Test Product"],
         ]
 
         # TODO Codequalität in Methode anpassen in ./src/app/routes/admin.py
@@ -26,13 +26,13 @@ class TestOrderTable(unittest.TestCase):
 
         # TODO expected_outcome anpassen um Test zu fixen
         expected_outcome = [
-            ["Order ID", "B: Test Product", "A: Test Product", "Z: Test Product"],
-            [12, 0, 3, 1],
+            ["Order ID", "A: Test Product", "B: Test Product", "Z: Test Product"],
             [1, 2, 0, 0],
+            [12, 0, 3, 1],
         ]
 
         self.assertTrue(expected_outcome == dynamic_table)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
