@@ -26,3 +26,4 @@ Sample credentials present in existing database:
 1. Migrationsskript erstellen: ``alembic revision --autogenerate -m "Initial migration"``
 2. Migrationen anwenden: ``alembic upgrade head``
 
+Test
